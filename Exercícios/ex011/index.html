@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <link rel="shortcut icon" href="Lerico.ico" type="image/x-icon">
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+            color: beige;
+        }
+        h1 {
+            color: chocolate;
+        }
+    </style>
+    <h1 style="color: chocolate;">Imagem Dinâmica</h1>
+    <p style="color: aquamarine;"> Tente abrir essa arquivo em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho da tela do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>Iremos aprender a reproduzir <b style="color: brown;">áudios em HTML5</b></p>
+    <hr>
+    <h2 style="color: chartreuse;"><i>Bumba Crossing</i></h2>  <audio src="midia/bumba-crossing.mp3" controls autoplay></audio>
+    <hr>
+    <p><i style="color: chartreuse;">Bumba Crossing</i> de <strong style="color: crimson;">Kevin MacLeod</strong> é licenciada de acordo com a licença Atribuição 4.0 da Creative Commons.br <br> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external">https://creativecommons.org/licenses/by/4.0/</a> <br><br>
+    Fonte: <br> <a href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500031" rel="external" target="_blank">http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500031</a> <br><br>
+    Artista: <a href="http://incompetech.com/" target="_blank" rel="external">http://incompetech.com/</a></p>
+
+
+    <hr>
+    <h2 style="color: chartreuse;"><i>Local Forecast</i></h2>  <audio src="midia/local-forecast.mp3" controls autoplay></audio>
+    <hr>
+    <p><i style="color: chartreuse;">Local Forecast</i> de <strong style="color: crimson;">Kevin MacLeod</strong> é licenciada de acordo com a licença Atribuição 4.0 da Creative Commons.br <br> <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="external">https://creativecommons.org/licenses/by/4.0/</a> <br><br>
+    Fonte: <br> <a href="http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500031" rel="external" target="_blank">http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1500031</a> <br><br>
+    Artista: <a href="http://incompetech.com/" target="_blank" rel="external">http://incompetech.com/</a></p>
+    <audio preload="metadata">
+        <source src="midia/bumba-crossing.mp3" type="audio/mpeg">
+        <source src="midia/local-forecast.ogg" type="audio/ogg">
+        <source src="midia/bumba-crossing.wav" type="audio/wav">
+    </audio>
+</body>
+</html>

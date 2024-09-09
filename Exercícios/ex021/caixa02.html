@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <link rel="shortcut icon" href="Lerico.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(119, 79, 31);
+            background-attachment: fixed;
+        }
+        p {
+            color: white;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.51);
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.198);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        main {
+            background-color:  rgba(255, 255, 255, 0.198);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: rgb(55, 142, 154);
+            text-shadow: 1px 1px 1px black;
+        }
+        nav {
+            background-color: rgba(55, 142, 154, 0.376);
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.288);
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            margin-right: 180px;
+        }
+        nav :hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color:  rgba(0, 0, 0, 0.522);
+            color: white;
+            text-align: center;
+            padding: 4px;
+            border-radius: 0px;
+        }
+        article {
+            background-color: rgba(55, 142, 154, 0.34);
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.288); 
+        }
+        article > aside {
+            background-color: rgb(35, 47, 47) ;
+        }
+        article > h2 {
+            color: rgb(236, 225, 212);
+            text-shadow: 1px 1px 1px black;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border-radius: 50%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Economia</p>
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre algo</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis iusto maiores optio eaque sed, asperiores delectus ratione dicta blanditiis consequatur pariatur molestias culpa quod autem eos veritatis aspernatur cumque!</p>
+                <aside>
+                    <p>Artigo escrito por ninguém</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por LRC</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
